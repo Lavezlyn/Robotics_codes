@@ -107,9 +107,9 @@ EST2 = zeros(1,steps); % Allocate space for results
 % Run UKF
 for k=1:steps
     % UKF parameters
-    alpha = 0.316;     % 扩展参数
-    beta = 0;         % 高斯分布最优值
-    kappa = 0.143;        % 次要扩展参数
+    alpha = 1.220;     % 扩展参数
+    beta = 0.500;         % 高斯分布最优值
+    kappa = -0.460;        % 次要扩展参数
     n = 1;           % 状态维度
     lambda = alpha^2 * (n + kappa) - n;
     
